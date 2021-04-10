@@ -1,7 +1,7 @@
 <div class="hcf-sidebar">
     <a href="{{ route('index') }}">
         <div class="hcf-sidebar__logo">
-            <img src="{{ secure_asset('img/hitconfirm-logo-small.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('img/hitconfirm-logo-small.png') }}" class="img-fluid" alt="">
         </div>
     </a>
     <div id="" class="hcf-sidebar__menu">
@@ -16,7 +16,7 @@
                 </li>
             </a>
             <a href="{{ route('news.index') }}">
-                <li class="{{ Request::routeIs('news.index') ? 'active' : '' }}">
+                <li class="{{ Request::routeIs('news.*') ? 'active' : '' }}">
                     <i class="fas fa-newspaper"></i>
                     <div class="hcf-sidebar__menu-item_name">News</div>
                 </li>
