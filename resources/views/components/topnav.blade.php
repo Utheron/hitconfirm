@@ -27,25 +27,25 @@
                 </div>
             </div>
         </div>     
-        <a href="{{ route('page.show', 'dolore-et') }}">
+        <a href="{{ route('page.show', 'nobis-ut') }}">
             <li class="active">
                 <i class="fas fa-store-alt hcf-topnav__menu-item_icon"></i>
                 <div class="hcf-topnav__menu-item_name">Association</div>
             </li>
         </a>
-        <a href="{{ route('page.show', 'inventore') }}">
+        <a href="{{ route('page.show', 'possimus') }}">
             <li class="active">
                 <i class="fas fa-balance-scale hcf-topnav__menu-item_icon"></i>
                 <div class="hcf-topnav__menu-item_name">Règlement</div>
             </li>
         </a>
-        <a href="{{ route('page.show', 'dolor-maxime') }}">
+        <a href="{{ route('page.show', 'voluptas') }}">
             <li class="active">
                 <i class="fas fa-file-signature hcf-topnav__menu-item_icon"></i>
                 <div class="hcf-topnav__menu-item_name">Devenir Membre</div>
             </li>
         </a>
-        <a href="{{ route('page.show', 'rem-quaerat') }}">
+        <a href="{{ route('page.show', 'omnis') }}">
             <li class="active">
                 <i class="fas fa-handshake hcf-topnav__menu-item_icon"></i>
                 <div class="hcf-topnav__menu-item_name">Partenaires</div>
