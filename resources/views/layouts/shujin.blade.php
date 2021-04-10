@@ -7,7 +7,7 @@
     
     <title>{{ $title . " - Hit Confirm" ?? 'Hit Confirm' }}</title>
     
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="hcf-wrapper__main">
@@ -29,5 +29,5 @@
         </div>
         
     </div>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
 </body>

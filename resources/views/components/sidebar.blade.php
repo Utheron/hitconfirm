@@ -1,7 +1,7 @@
 <div class="hcf-sidebar">
     <a href="{{ route('index') }}">
         <div class="hcf-sidebar__logo">
-            <img src="{{ asset('img/hitconfirm-logo-small.png') }}" class="img-fluid" alt="">
+            <img src="{{ secure_asset('img/hitconfirm-logo-small.png') }}" class="img-fluid" alt="">
         </div>
     </a>
     <div id="" class="hcf-sidebar__menu">
