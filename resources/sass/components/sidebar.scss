@@ -1,0 +1,98 @@
+.hcf-sidebar {
+    width: $sidebar-width;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: $shadow;
+    position: fixed;
+    z-index: 1;
+    font-family: $font-title;
+    a { color: $sidebar-link }
+}
+
+.hcf-sidebar__logo {
+    padding: .5rem;
+    text-align: center;
+}
+
+.hcf-sidebar__menu {
+    margin-bottom: 1rem;
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $cyan;
+        }
+    }
+}
+
+.hcf-sidebar__menu-title {
+    padding: .5rem 0 .5rem calc(1rem + .4vw);
+    border-bottom: solid 1px $body-bg;
+    text-transform: uppercase;
+    color: #a4a4a4;
+    font-size: .65rem;
+}
+
+.hcf-sidebar__menu-items {
+    li {
+        display: flex;
+        align-items: center;
+        border-left: solid .4vw #fff;
+        padding: .5rem 1rem;
+        &.active {
+            border-left: solid .4vw $color-primary;
+            background-color: $body-bg;
+            box-shadow: 6px 0px 0px $body-bg;
+            color: $menu-link__active;
+        }
+    }
+    i {
+        min-width: 26px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+.hcf-sidebar__menu-item_name {
+    padding: 0 .5rem;
+}
+
+#sidebar-menu__social .hcf-sidebar__menu-items {
+    display: flex;
+    padding: .5rem 0 .5rem 1rem;
+    li { padding: unset }
+    i {
+        padding: .5rem .25rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hcf-sidebar {
+        display: none;
+    }
+    .hcf-wrapper__container {
+        margin-left: unset !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hcf-sidebar__menu-items i {
+        font-size: 2rem;
+    }
+    .hcf-sidebar__menu-items li {
+        justify-content: center;
+    }
+    .hcf-sidebar__menu-item_name {
+        display: none;
+    }
+    .hcf-sidebar__menu-title {
+        padding: .5rem;
+        text-align: center;
+    }
+    .hcf-sidebar {
+        width: $sidebar-width__small;
+    }
+    .hcf-wrapper__container {
+        margin-left: $sidebar-width__small;
+    }
+}

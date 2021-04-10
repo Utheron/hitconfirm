@@ -1,0 +1,47 @@
+.hcf-admin__menu {
+    width: calc(100% - #{$sidebar-width});
+    position: fixed;
+    bottom: 0;
+    left: $sidebar-width;
+    background-color: $color-primary;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #fff;
+        display: flex;
+    }
+    min-height: 56px;
+}
+
+.hcf-admin__menu-items {
+    display: flex;
+    align-items: center;
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hcf-admin__menu-item_icon {
+    padding: 0 .5rem;
+    font-size: 1rem;
+}
+
+.hcf-admin__append-notify .btn {
+    margin: 0 .25rem;
+}
+
+@media (max-width: 576px) {
+    .hcf-admin__menu {
+        left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hcf-admin__menu {
+        left: $sidebar-width__small;
+        width: calc(100% - #{$sidebar-width__small});
+    }
+}
