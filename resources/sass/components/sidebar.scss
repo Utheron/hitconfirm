@@ -44,6 +44,10 @@
             box-shadow: 6px 0px 0px $body-bg;
             color: $menu-link__active;
         }
+        &.disabled {
+            color: #cfe6f4;
+            cursor: not-allowed;
+        }
     }
     i {
         min-width: 26px;

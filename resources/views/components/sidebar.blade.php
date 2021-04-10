@@ -22,19 +22,19 @@
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-calendar-day"></i>
                     <div class="hcf-sidebar__menu-item_name">Events</div>
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-medal"></i>
                     <div class="hcf-sidebar__menu-item_name">Classements</div>
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-child"></i>
                     <div class="hcf-sidebar__menu-item_name">Players</div>
                 </li>
@@ -48,19 +48,19 @@
         </div>
         <ul class="hcf-sidebar__menu-items">
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-users"></i>
                     <div class="hcf-sidebar__menu-item_name">Members</div>
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-coins"></i>
                     <div class="hcf-sidebar__menu-item_name">Treasury</div>
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-boxes"></i>
                     <div class="hcf-sidebar__menu-item_name">Inventory</div>
                 </li>
@@ -74,13 +74,13 @@
         </div>
         <ul class="hcf-sidebar__menu-items">
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-paper-plane"></i>
                     <div class="hcf-sidebar__menu-item_name">Contact</div>
                 </li>
             </a>
             <a href="">
-                <li class="">
+                <li class="disabled">
                     <i class="fas fa-building"></i>
                     <div class="hcf-sidebar__menu-item_name">Adresse</div>
                 </li>
