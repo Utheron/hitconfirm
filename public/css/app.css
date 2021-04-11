@@ -6144,6 +6144,19 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+.hcf-headline__block .hcf-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hcf-headline__block .hcf-shadow:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.fa-green {
+  color: #70df70;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -17341,6 +17354,22 @@ a.text-dark:focus {
   display: flex;
 }
 
+.hcf-admin__menu-append {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hcf-admin__menu-append i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  max-width: 72px;
+}
+
+.hcf-admin__menu-append .dropdown-menu a {
+  color: unset;
+}
+
 .hcf-admin__menu-items {
   display: flex;
   align-items: center;
@@ -17349,6 +17378,15 @@ a.text-dark:focus {
 .hcf-admin__menu-items li {
   display: flex;
   align-items: center;
+}
+
+.hcf-admin__menu-items li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hcf-dashboard__title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 
 .hcf-admin__menu-item_icon {
@@ -17372,6 +17410,32 @@ a.text-dark:focus {
     left: 15vw;
     width: calc(100% - 15vw);
   }
+}
+
+.hcf-admin__header {
+  background-color: #fff;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hcf-admin__header-title {
+  font-family: "Oswald", sans-serif;
+}
+
+.hcf-admin__card {
+  background-color: #fff;
+  margin: 0 1rem;
+}
+
+.hcf-admin__card-title {
+  font-family: "Oswald", sans-serif;
+  padding: 0.5rem 0;
+  border-bottom: solid 1px rgba(75, 82, 91, 0.3);
+}
+
+.hcf-admin__card-body {
+  padding: 1rem;
 }
 
 h1,
@@ -17403,8 +17467,21 @@ li {
 }
 
 .hcf-main {
+  position: relative;
   padding: 1rem 2rem;
   color: #5e5e5e;
+}
+
+.hcf-headline__row {
+  display: flex;
+  color: unset;
+  background-color: #fff;
+  text-decoration: none !important;
+  margin-bottom: 1rem;
+}
+
+.hcf-headline__row:hover {
+  color: unset;
 }
 
 .hcf-headline__block {
@@ -17428,6 +17505,12 @@ li {
   margin: 0 0.5rem;
   padding: 0.2rem 0.4rem 0.4rem;
   font-weight: unset;
+}
+
+.hcf-headline__block-content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .hcf-headline__block-footer {

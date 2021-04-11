@@ -7,6 +7,7 @@
 
 // Variables
 @import 'utilities/variables';
+@import 'utilities/common';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -14,6 +15,7 @@
 @import 'components/sidebar';
 @import 'components/topnav';
 @import 'components/admin-menu';
+@import 'components/dashboard';
 
 // Reset
 h1,h2,h3,h4,h5,h6,
@@ -39,14 +41,29 @@ ul, li {
 }
 
 .hcf-main {
+    position: relative;
     padding: 1rem 2rem;
     color: #5e5e5e;
+}
+
+.hcf-headline__row {
+    display: flex;
+    color: unset;
+    background-color: #fff;
+    text-decoration: none !important;
+    margin-bottom: 1rem;
+    &:hover {
+        color: unset;;
+    }
 }
 
 .hcf-headline__block {
     background-color: #fff;
     padding: 1rem;
     text-decoration: none !important;
+    .hcf-shadow {
+        @extend %shadow1;
+    }
 }
 
 .hcf-headline__block-title {
@@ -63,6 +80,12 @@ ul, li {
         padding: .2rem .4rem .4rem;
         font-weight: unset;
     }
+}
+
+.hcf-headline__block-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .hcf-headline__block-footer {
