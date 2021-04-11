@@ -1,0 +1,25 @@
+.hcf-admin__header {
+    background-color: #fff;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hcf-admin__header-title {
+    font-family: $font-title;
+}
+
+.hcf-admin__card {
+    background-color: #fff;
+    margin: 0 1rem;
+}
+
+.hcf-admin__card-title {
+    font-family: $font-title;
+    padding: .5rem 0;
+    border-bottom: solid 1px rgba($color-primary, .3); 
+}
+
+.hcf-admin__card-body {
+    padding: 1rem;
+}

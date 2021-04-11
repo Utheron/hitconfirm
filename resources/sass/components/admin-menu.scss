@@ -14,13 +14,35 @@
     min-height: 56px;
 }
 
+.hcf-admin__menu-append {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    i {
+        font-size: 1.5rem;
+        padding: 0 .5rem;
+        max-width: 72px;
+    }
+    .dropdown-menu a {
+        color: unset;
+    }
+}
+
 .hcf-admin__menu-items {
     display: flex;
     align-items: center;
     li {
         display: flex;
         align-items: center;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
     }
+}
+
+.hcf-dashboard__title {
+    color: #fff;
+    font-family: $font-title;
 }
 
 .hcf-admin__menu-item_icon {
