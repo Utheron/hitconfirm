@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -15,9 +16,11 @@ class IndexController extends Controller
     public function index()
     {
         $title = 'Dashboard';
+        $users = User::limit(5)->orderBy('created_at', 'desc')->get();
 
         return view('dashboard.index', [
             'title' => $title,
+            'users' => $users
         ]);
     }
 

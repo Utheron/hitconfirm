@@ -20,33 +20,9 @@
     </div>
 </div>
 <div class="row">
-    <div class="col hcf-admin__card ml-0">
-        <div class="hcf-admin__card-title">
-            Members
-        </div>
-        <div class="hcf-admin__card-body"></div>
-        <div class="hcf-admin__card-footer"></div>
-    </div>
-    <div class="col hcf-admin__card">
-        <div class="hcf-admin__card-title">
-            Treasury
-        </div>
-        <div class="hcf-admin__card-body"></div>
-        <div class="hcf-admin__card-footer"></div>
-    </div>
-    <div class="col hcf-admin__card">
-        <div class="hcf-admin__card-title">
-            Users
-        </div>
-        <div class="hcf-admin__card-body"></div>
-        <div class="hcf-admin__card-footer"></div>
-    </div>
-    <div class="col hcf-admin__card mr-0">
-        <div class="hcf-admin__card-title">
-            Agenda
-        </div>
-        <div class="hcf-admin__card-body"></div>
-        <div class="hcf-admin__card-footer"></div>
-    </div>
+        <card-members :users="{{ $users }}"></card-members>
+        <card-treasury></card-treasury>
+        <card-users :users="{{ $users }}"></card-users>
+        <card-agenda></card-agenda> 
 </div>
 @endsection

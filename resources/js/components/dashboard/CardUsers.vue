@@ -1,7 +1,7 @@
 <template>
-    <div class="col hcf-admin__card ml-0">
+    <div class="col hcf-admin__card">
         <div class="hcf-admin__card-title">
-            New Members
+            New Users
         </div>
         <div class="hcf-admin__card-body">
             <ul class="hcf-card__users-items">
@@ -23,4 +23,4 @@
             }
         }        
     }
-</script> 
+</script>

@@ -20,7 +20,7 @@
             
             <div class="hcf-wrapper__container-content">
                 @include('components.topnav')
-                <div class="hcf-main">
+                <div id="app" class="hcf-main">
                     @yield('content')
                 </div>
             </div>
