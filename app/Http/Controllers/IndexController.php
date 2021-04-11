@@ -10,7 +10,7 @@ class IndexController extends Controller
     {
         $title = 'Accueil';
 
-        $index_news = Post::limit(8)->orderBy('created_at', 'desc')->get();
+        $index_news = Post::limit(4)->orderBy('created_at', 'desc')->get();
 
         return view('index', [
             'title' => $title,
