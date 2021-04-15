@@ -8,10 +8,11 @@ use Faker\Generator as Faker;
 
 $factory->define(Post::class, function (Faker $faker) {
     return [
-        'category_id' => $faker->numberBetween(1,4),
+        'user_id' => 1,
+        'category_id' => $faker->numberBetween(1,3),
         
-        'slug' => $faker->unique()->slug(1),
-        'name' => $faker->sentence(3),
+        'slug' => $faker->unique()->slug(3),
+        'name' => $faker->unique()->sentence(4),
         'content' => $faker->text(100),
         'header' => 'https://place-hold.it/1280x720',
         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

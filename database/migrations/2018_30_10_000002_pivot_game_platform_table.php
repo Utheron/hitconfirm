@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostCategoriesTable extends Migration
+class PivotGamePlatformTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreatePostCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('post_categories', function (Blueprint $table) {
+        Schema::create('game_platform', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
-            $table->string('name');
+            $table->foreignId('game_id')
+            ->constrained('games')
+            ->onDelete('cascade');
+            $table->foreignId('platform_id')
+            ->constrained('platforms')
+            ->onDelete('cascade');
         });
     }
 
@@ -27,6 +31,6 @@ class CreatePostCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('post_categories');
+        Schema::dropIfExists('game_platform');
     }
 }

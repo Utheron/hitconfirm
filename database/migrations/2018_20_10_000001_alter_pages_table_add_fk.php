@@ -14,9 +14,17 @@ class AlterPagesTableAddFk extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->foreignId('category_id')
+            $table->foreignId('user_id')
             ->after('id')
-            ->constrained('page_categories');
+            ->constrained('users')
+            ->onDelete('cascade');
+        });
+
+        Schema::table('pages', function (Blueprint $table) {
+            $table->foreignId('category_id')
+            ->after('user_id')
+            ->constrained('page_categories')
+            ->onDelete('cascade');
         });
     }
     
@@ -29,6 +37,7 @@ class AlterPagesTableAddFk extends Migration
     {
         Schema::table('pages', function (Blueprint $table) {
             $table->dropColumn([
+                'user_id',
                 'category_id',
             ]);
         });

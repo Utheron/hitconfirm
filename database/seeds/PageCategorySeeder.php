@@ -15,13 +15,8 @@ class PageCategorySeeder extends Seeder
     {
         DB::table('page_categories')->insert([
             [
-                'slug' => 'association',
-                'name' => 'Association',
-            ],
-            [
-                'slug' => 'partenaire',
-                'name' => 'Partenaire',
-            ],
+                'name' => 'default',
+            ]
         ]);
     }
 }

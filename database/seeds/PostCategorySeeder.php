@@ -14,25 +14,14 @@ class PostCategorySeeder extends Seeder
     {
         DB::table('post_categories')->insert([
             [
-                'slug' => 'news',
+                'name' => 'Association',
+            ],
+            [
                 'name' => 'News',
             ],
             [
-                'slug' => 'ranking',
-                'name' => 'Ranking',
-            ],
-            [
-                'slug' => 'event',
                 'name' => 'Event',
-            ],
-            [
-                'slug' => 'tournament',
-                'name' => 'Tournament',
-            ],
-            [
-                'slug' => 'online',
-                'name' => 'Online',
-            ],
+            ]
         ]);
     }
 }

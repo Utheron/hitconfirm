@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\GamePlatform;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,14 +13,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            RoleSeeder::class,
-
             PageCategorySeeder::class,
             PostCategorySeeder::class,
-            
+
+            RoleSeeder::class,
+            VenueSeeder::class,
             UserSeeder::class,
             PageSeeder::class,
             PostSeeder::class,
+            GameSeeder::class,
+            
+            PlatformSeeder::class,
+            GamePlatformSeeder::class,
         ]);
     }
 }

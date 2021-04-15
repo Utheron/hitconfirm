@@ -3,13 +3,10 @@
 <div class="hcf-admin__menu">
     <ul class="hcf-admin__menu-items col-9">     
         <li class="hcf-dashboard__title">
-            <a class="btn btn-warning" href="{{ route('dashboard') }}">Dashboard</a>
+            <a class="btn btn-warning text-dark" href="{{ route('dashboard') }}">Dashboard</a>
         </li>
         <li class="hcf-dashboard__title">
             23 Members
-        </li>
-        <li class="hcf-dashboard__title">
-            120€ Treasury
         </li>
         <li class="hcf-dashboard__title">
             31 Registered

@@ -14,9 +14,17 @@ class AlterPostsTableAddFk extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->foreignId('category_id')
+            $table->foreignId('user_id')
             ->after('id')
-            ->constrained('post_categories');
+            ->constrained('users')
+            ->onDelete('cascade');
+        });
+
+        Schema::table('posts', function (Blueprint $table) {
+            $table->foreignId('category_id')
+            ->after('user_id')
+            ->constrained('post_categories')
+            ->onDelete('cascade');
         });
     }
     
@@ -29,6 +37,7 @@ class AlterPostsTableAddFk extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn([
+                'user_id',
                 'category_id',
             ]);
         });
